@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Leaf Cafe - Fresh & Organic</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-leaf"></i>
+                <span>Green Leaf Cafe</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to Green Leaf Cafe</h1>
+            <p class="hero-subtitle">Fresh, organic, and sustainably sourced coffee and food</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="#contact" class="btn btn-secondary">Visit Us</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="coffee-cup">
+                <i class="fas fa-coffee"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <p class="section-subtitle">Carefully crafted with love and sustainability in mind</p>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="coffee">Coffee</button>
+                <button class="category-btn" data-category="food">Food</button>
+                <button class="category-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Coffee Items -->
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Organic Espresso</h3>
+                        <p>Rich, bold flavor from sustainably sourced beans</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Green Tea Latte</h3>
+                        <p>Matcha powder with steamed oat milk</p>
+                        <span class="price">$4.25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="coffee">
+                    <div class="menu-item-image">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Cold Brew</h3>
+                        <p>Slow-brewed for 12 hours, served over ice</p>
+                        <span class="price">$4.00</span>
+                    </div>
+                </div>
+
+                <!-- Food Items -->
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Avocado Toast</h3>
+                        <p>Smashed avocado on sourdough with microgreens</p>
+                        <span class="price">$8.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Green Bowl</h3>
+                        <p>Quinoa, kale, spinach, and seasonal vegetables</p>
+                        <span class="price">$12.00</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="food">
+                    <div class="menu-item-image">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Veggie Wrap</h3>
+                        <p>Fresh vegetables in a spinach tortilla</p>
+                        <span class="price">$9.75</span>
+                    </div>
+                </div>
+
+                <!-- Dessert Items -->
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Matcha Cheesecake</h3>
+                        <p>Creamy cheesecake with green tea flavor</p>
+                        <span class="price">$6.50</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Green Smoothie Bowl</h3>
+                        <p>Acai and spinach smoothie with fresh toppings</p>
+                        <span class="price">$7.25</span>
+                    </div>
+                </div>
+
+                <div class="menu-item" data-category="desserts">
+                    <div class="menu-item-image">
+                        <i class="fas fa-cookie-bite"></i>
+                    </div>
+                    <div class="menu-item-content">
+                        <h3>Mint Chocolate Chip</h3>
+                        <p>House-made ice cream with fresh mint</p>
+                        <span class="price">$5.75</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">About Green Leaf Cafe</h2>
+                    <p>Founded in 2020, Green Leaf Cafe is committed to serving the freshest, most sustainable coffee and food in the city. We believe in supporting local farmers and using only organic, ethically sourced ingredients.</p>
+                    <p>Our mission is to create a welcoming space where community and sustainability meet. Every cup of coffee and every meal is crafted with care for both our customers and the planet.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <h4>100% Organic</h4>
+                            <p>All ingredients are certified organic</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-recycle"></i>
+                            <h4>Eco-Friendly</h4>
+                            <p>Compostable packaging and zero waste</p>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-heart"></i>
+                            <h4>Community Focused</h4>
+                            <p>Supporting local farmers and artisans</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-store"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Visit Us</h2>
+            <p class="section-subtitle">Come experience the Green Leaf difference</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Green Street<br>Eco City, EC 12345</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>(555) 123-GREEN</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Hours</h4>
+                            <p>Mon-Fri: 6:00 AM - 8:00 PM<br>Sat-Sun: 7:00 AM - 9:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@greenleafcafe.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a message</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <span>Green Leaf Cafe</span>
+                    </div>
+                    <p>Fresh, organic, and sustainably sourced coffee and food for a better tomorrow.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>123 Green Street<br>Eco City, EC 12345</p>
+                    <p>(555) 123-GREEN</p>
+                    <p>hello@greenleafcafe.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Green Leaf Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+
+        // Menu category filtering
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        const menuItems = document.querySelectorAll('.menu-item');
+
+        categoryBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const category = btn.getAttribute('data-category');
+
+                menuItems.forEach(item => {
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We\'ll get back to you soon.');
+        });
+    </script>
+</body>
+</html>
